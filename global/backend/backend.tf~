@@ -1,0 +1,7 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-demozeyang"
+    key    = "global/backend/terraform-global.tfstate"
+    region = "us-east-1"
+  }
+}
